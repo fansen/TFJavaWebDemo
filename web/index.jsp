@@ -17,7 +17,7 @@
 
   <p><a href="http://localhost:8080/api/Connect">Connect</a></p>
 
-  <p><a href="http://localhost:8080/api/PlaceOrder">PlaceOrder</a></p>
+  <p><a href="http://localhost:8080/api/onReqAcctData">onReqAcctData</a></p>
 
   <p><a href="http://localhost:8080/api/SingleMarketOrder">SingleMarketOrder</a></p>
 

@@ -22,7 +22,7 @@ public abstract class EClient {
     //      We send back all the API open orders upon connection.
     //      Added new methods reqAllOpenOrders, reqAutoOpenOrders()
     //      Added FA support - reqExecution has filter.
-    //                       - reqAccountUpdates takes acct code.
+    //                       - onReqAcctData takes acct code.
     // 11 = Added permId to openOrder event.
     // 12 = requsting open order attributes ignoreRth, hidden, and discretionary
     // 13 = added goodAfterTime

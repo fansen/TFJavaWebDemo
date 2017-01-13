@@ -128,239 +128,274 @@ class EDecoder implements ObjectInput {
         }
 
         int msgId = readInt();
-        System.out.println("TEST: msgId = " + msgId);
 
         switch (msgId) {
-            case END_CONN:
+            case END_CONN: {
+                System.out.println("EDecoder: msgId = " + msgId + ", END_CONN");
                 return 0;
+            }
             case TICK_PRICE: {
+                System.out.println("EDecoder: msgId = " + msgId + ", TICK_PRICE");
                 processTickPriceMsg();
                 break;
             }
             case TICK_SIZE: {
+                System.out.println("EDecoder: msgId = " + msgId + ", TICK_SIZE");
                 processTickSizeMsg();
                 break;
             }
-
             case POSITION: {
+                System.out.println("EDecoder: msgId = " + msgId + ", POSITION");
                 processPositionMsg();
                 break;
             }
-
             case POSITION_END: {
+                System.out.println("EDecoder: msgId = " + msgId + ", POSITION_END");
                 processPositionEndMsg();
                 break;
             }
-
             case ACCOUNT_SUMMARY: {
+                System.out.println("EDecoder: msgId = " + msgId + ", ACCOUNT_SUMMARY");
                 processAccountSummaryMsg();
                 break;
             }
-
             case ACCOUNT_SUMMARY_END: {
+                System.out.println("EDecoder: msgId = " + msgId + ", ACCOUNT_SUMMARY_END");
                 processAccountSummaryEndMsg();
                 break;
             }
-
             case TICK_OPTION_COMPUTATION: {
+                System.out.println("EDecoder: msgId = " + msgId + ", TICK_OPTION_COMPUTATION");
                 processTickOptionComputatioMsg();
                 break;
             }
-
             case TICK_GENERIC: {
+                System.out.println("EDecoder: msgId = " + msgId + ", TICK_GENERIC");
                 processTickGenericMsg();
                 break;
             }
-
             case TICK_STRING: {
+                System.out.println("EDecoder: msgId = " + msgId + ", TICK_STRING");
                 processTickStringMsg();
                 break;
             }
-
             case TICK_EFP: {
+                System.out.println("EDecoder: msgId = " + msgId + ", TICK_EFP");
                 processTickEFPMsg();
                 break;
             }
-
             case ORDER_STATUS: {
+                System.out.println("EDecoder: msgId = " + msgId + ", ORDER_STATUS");
                 processOrderStatusMsg();
                 break;
             }
-
             case ACCT_VALUE: {
+                System.out.println("EDecoder: msgId = " + msgId + ", ACCT_VALUE");
                 processAcctValueMsg();
                 break;
             }
-
             case PORTFOLIO_VALUE: {
+                System.out.println("EDecoder: msgId = " + msgId + ", PORTFOLIO_VALUE");
                 processPortfolioValueMsg();
-
                 break;
             }
-
             case ACCT_UPDATE_TIME: {
+                System.out.println("EDecoder: msgId = " + msgId + ", ACCT_UPDATE_TIME");
                 processAcctUpdateTimeMsg();
                 break;
             }
-
             case ERR_MSG: {
+                System.out.println("EDecoder: msgId = " + msgId + ", ERR_MSG");
                 processErrMsgMsg();
                 break;
             }
-
             case OPEN_ORDER: {
+                System.out.println("EDecoder: msgId = " + msgId + ", OPEN_ORDER");
                 processOpenOrderMsg();
                 break;
             }
-
             case NEXT_VALID_ID: {
+                System.out.println("EDecoder: msgId = " + msgId + ", NEXT_VALID_ID");
                 processNextValidIdMsg();
                 break;
             }
-
             case SCANNER_DATA: {
+                System.out.println("EDecoder: msgId = " + msgId + ", SCANNER_DATA");
                 processScannerDataMsg();
                 break;
             }
-
             case CONTRACT_DATA: {
+                System.out.println("EDecoder: msgId = " + msgId + ", CONTRACT_DATA");
                 processContractDataMsg();
                 break;
             }
             case BOND_CONTRACT_DATA: {
+                System.out.println("EDecoder: msgId = " + msgId + ", BOND_CONTRACT_DATA");
                 processBondContractDataMsg();
                 break;
             }
             case EXECUTION_DATA: {
+                System.out.println("EDecoder: msgId = " + msgId + ", EXECUTION_DATA");
                 processExecutionDataMsg();
                 break;
             }
             case MARKET_DEPTH: {
+                System.out.println("EDecoder: msgId = " + msgId + ", MARKET_DEPTH");
                 processMarketDepthMsg();
                 break;
             }
             case MARKET_DEPTH_L2: {
+                System.out.println("EDecoder: msgId = " + msgId + ", MARKET_DEPTH_L2");
                 processMarketDepthL2Msg();
                 break;
             }
             case NEWS_BULLETINS: {
+                System.out.println("EDecoder: msgId = " + msgId + ", NEWS_BULLETINS");
                 processNewsBulletinsMsg();
                 break;
             }
             case MANAGED_ACCTS: {
+                System.out.println("EDecoder: msgId = " + msgId + ", MANAGED_ACCTS");
                 processManagedAcctsMsg();
                 break;
             }
             case RECEIVE_FA: {
+                System.out.println("EDecoder: msgId = " + msgId + ", RECEIVE_FA");
                 processReceiveFaMsg();
                 break;
             }
             case HISTORICAL_DATA: {
+                System.out.println("EDecoder: msgId = " + msgId + ", HISTORICAL_DATA");
                 processHistoricalDataMsg();
                 break;
             }
             case SCANNER_PARAMETERS: {
+                System.out.println("EDecoder: msgId = " + msgId + ", SCANNER_PARAMETERS");
                 processScannerParametersMsg();
                 break;
             }
             case CURRENT_TIME: {
+                System.out.println("EDecoder: msgId = " + msgId + ", CURRENT_TIME");
                 processCurrentTimeMsg();
                 break;
             }
             case REAL_TIME_BARS: {
+                System.out.println("EDecoder: msgId = " + msgId + ", REAL_TIME_BARS");
                 processRealTimeBarsMsg();
                 break;
             }
             case FUNDAMENTAL_DATA: {
+                System.out.println("EDecoder: msgId = " + msgId + ", FUNDAMENTAL_DATA");
                 processFundamentalDataMsg();
                 break;
             }
             case CONTRACT_DATA_END: {
+                System.out.println("EDecoder: msgId = " + msgId + ", CONTRACT_DATA_END");
                 processContractDataEndMsg();
                 break;
             }
             case OPEN_ORDER_END: {
+                System.out.println("EDecoder: msgId = " + msgId + ", OPEN_ORDER_END");
                 processOpenOrderEndMsg();
                 break;
             }
             case ACCT_DOWNLOAD_END: {
+                System.out.println("EDecoder: msgId = " + msgId + ", ACCT_DOWNLOAD_END");
                 processAcctDownloadEndMsg();
                 break;
             }
             case EXECUTION_DATA_END: {
+                System.out.println("EDecoder: msgId = " + msgId + ", EXECUTION_DATA_END");
                 processExecutionDataEndMsg();
                 break;
             }
             case DELTA_NEUTRAL_VALIDATION: {
+                System.out.println("EDecoder: msgId = " + msgId + ", DELTA_NEUTRAL_VALIDATION");
                 processDeltaNetrualValidationMsg();
                 break;
             }
             case TICK_SNAPSHOT_END: {
+                System.out.println("EDecoder: msgId = " + msgId + ", TICK_SNAPSHOT_END");
                 processTickSnapshotEndMsg();
                 break;
             }
             case MARKET_DATA_TYPE: {
+                System.out.println("EDecoder: msgId = " + msgId + ", MARKET_DATA_TYPE");
                 processMarketDataTypeMsg();
                 break;
             }
             case COMMISSION_REPORT: {
+                System.out.println("EDecoder: msgId = " + msgId + ", COMMISSION_REPORT");
                 processCommissionReportMsg();
                 break;
             }
             case VERIFY_MESSAGE_API: {
+                System.out.println("EDecoder: msgId = " + msgId + ", VERIFY_MESSAGE_API");
                 processVerifyMessageApiMsg();
                 break;
             }
             case VERIFY_COMPLETED: {
+                System.out.println("EDecoder: msgId = " + msgId + ", VERIFY_COMPLETED");
                 processVerivyCompletedMsg();
                 break;
             }
             case DISPLAY_GROUP_LIST: {
+                System.out.println("EDecoder: msgId = " + msgId + ", DISPLAY_GROUP_LIST");
                 processDisplayGroupListMsg();
                 break;
             }
             case DISPLAY_GROUP_UPDATED: {
+                System.out.println("EDecoder: msgId = " + msgId + ", DISPLAY_GROUP_UPDATED");
                 processDisplayGroupUpdatedMsg();
                 break;
             }
             case VERIFY_AND_AUTH_MESSAGE_API: {
+                System.out.println("EDecoder: msgId = " + msgId + ", VERIFY_AND_AUTH_MESSAGE_API");
                 processVerifyAndAuthMessageMsg();
                 break;
             }
             case VERIFY_AND_AUTH_COMPLETED: {
+                System.out.println("EDecoder: msgId = " + msgId + ", VERIFY_AND_AUTH_COMPLETED");
                 processVerifyAndAuthCompletedMsg();
                 break;
             }
             case POSITION_MULTI: {
+                System.out.println("EDecoder: msgId = " + msgId + ", POSITION_MULTI");
                 processPositionMultiMsg();
                 break;
             }
             case POSITION_MULTI_END: {
+                System.out.println("EDecoder: msgId = " + msgId + ", POSITION_MULTI_END");
                 processPositionMultiEndMsg();
                 break;
             }
             case ACCOUNT_UPDATE_MULTI: {
+                System.out.println("EDecoder: msgId = " + msgId + ", ACCOUNT_UPDATE_MULTI");
                 processAccountUpdateMultiMsg();
                 break;
             }
             case ACCOUNT_UPDATE_MULTI_END: {
+                System.out.println("EDecoder: msgId = " + msgId + ", ACCOUNT_UPDATE_MULTI_END");
                 processAccountUpdateMultiEndMsg();
                 break;
             }
-
-            case SECURITY_DEFINITION_OPTION_PARAMETER:
+            case SECURITY_DEFINITION_OPTION_PARAMETER: {
+                System.out.println("EDecoder: msgId = " + msgId + ", SECURITY_DEFINITION_OPTION_PARAMETER");
                 processSecurityDefinitionOptionalParameterMsg();
                 break;
-
-            case SECURITY_DEFINITION_OPTION_PARAMETER_END:
+            }
+            case SECURITY_DEFINITION_OPTION_PARAMETER_END: {
+                System.out.println("EDecoder: msgId = " + msgId + ", SECURITY_DEFINITION_OPTION_PARAMETER_END");
                 processSecurityDefinitionOptionalParameterEndMsg();
                 break;
-
-            case SOFT_DOLLAR_TIERS:
+            }
+            case SOFT_DOLLAR_TIERS: {
+                System.out.println("EDecoder: msgId = " + msgId + ", SOFT_DOLLAR_TIERS");
                 processSoftDollarTiersMsg();
                 break;
-
+            }
             default: {
+                System.out.println("EDecoder: default");
                 m_EWrapper.error(EClientErrors.NO_VALID_ID, EClientErrors.UNKNOWN_ID.code(), EClientErrors.UNKNOWN_ID.msg());
                 return 0;
             }

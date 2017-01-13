@@ -141,29 +141,24 @@ public class EWrapperImpl implements EWrapper {
     }
     //! [openorderend]
 
-    //! [updateaccountvalue]
-    @Override
-    public void updateAccountValue(String key, String value, String currency, String accountName) {
-        System.out.println("UpdateAccountValue. Key: " + key + ", Value: " + value + ", Currency: " + currency + ", AccountName: " + accountName);
-    }
-    //! [updateaccountvalue]
-
-    //! [updateportfolio]
-    @Override
-    public void updatePortfolio(Contract contract, double position, double marketPrice, double marketValue, double averageCost,
-                                double unrealizedPNL, double realizedPNL, String accountName) {
-        System.out.println("UpdatePortfolio. " + contract.symbol() + ", " + contract.secType() + " @ " + contract.exchange()
-                + ": Position: " + position + ", MarketPrice: " + marketPrice + ", MarketValue: " + marketValue + ", AverageCost: " + averageCost
-                + ", UnrealisedPNL: " + unrealizedPNL + ", RealisedPNL: " + realizedPNL + ", AccountName: " + accountName);
-    }
-    //! [updateportfolio]
-
-    //! [updateaccounttime]
     @Override
     public void updateAccountTime(String timeStamp) {
         System.out.println("UpdateAccountTime. Time: " + timeStamp + "\n");
     }
-    //! [updateaccounttime]
+
+    @Override
+    public void updateAccountValue(String key, String value, String currency, String accountName) {
+        System.out.println("UpdateAccountValue. Key: " + key + ", Value: " + value + ", Currency: " + currency + ", AccountName: " + accountName);
+    }
+
+    @Override
+    public void updatePortfolio(Contract contract, double position, double marketPrice, double marketValue, double averageCost,
+                                double unrealizedPNL, double realizedPNL, String accountName) {
+        System.out.println("UpdatePortfolio. " + contract.conid() + ", " + contract.symbol() + ", " + contract.secType() + " @ " + contract.exchange()
+                + ": Position: " + position + ", MarketPrice: " + marketPrice + ", MarketValue: " + marketValue + ", AverageCost: " + averageCost
+                + ", UnrealisedPNL: " + unrealizedPNL + ", RealisedPNL: " + realizedPNL + ", AccountName: " + accountName);
+    }
+
 
     //! [accountdownloadend]
     @Override

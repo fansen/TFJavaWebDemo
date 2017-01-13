@@ -57,4 +57,10 @@ public class Utils {
             System.out.println("ERROR: " + msg);
         }
     }
+
+    public static void onReqAcctData(boolean subscribe, String acctCode) {
+        SettingData.m_client.reqAccountUpdates(subscribe, acctCode);
+    }
+
+
 }

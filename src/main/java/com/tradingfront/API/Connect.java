@@ -30,7 +30,7 @@ public class Connect {
     @Produces(MediaType.TEXT_HTML)
     public String sayHtmlConnect() {
         String m_reqIp = "127.0.0.1";
-        int m_reqPort = 4001;
+        int m_reqPort = 7497;
         int m_reqClientId = 0;
         Utils.Connect(m_reqIp, m_reqPort, m_reqClientId);
         return "<html> " + "<title>" + "Connect" + "</title>"
