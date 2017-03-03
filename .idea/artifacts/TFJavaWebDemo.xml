@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" build-on-make="true" name="TFJavaWebDemo:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/TFJavaWebDemo_war_exploded</output-path>
-    <root id="root">
+  <artifact type="war" build-on-make="true" name="TFJavaWebDemo">
+    <output-path>$PROJECT_DIR$/out/artifacts/TFJavaWebDemo</output-path>
+    <root id="archive" name="TFJavaWebDemo.war">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="TFJavaWebDemo" />

@@ -15,6 +15,6 @@
 
     <servlet-mapping>
         <servlet-name>Servlet</servlet-name>
-        <url-pattern>/api/*</url-pattern>
+        <url-pattern>/TFJavaWebDemo/api/*</url-pattern>
     </servlet-mapping>
 </web-app>

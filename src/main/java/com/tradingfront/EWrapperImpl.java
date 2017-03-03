@@ -266,12 +266,10 @@ public class EWrapperImpl implements EWrapper {
     }
     //! [updatenewsbulletin]
 
-    //! [managedaccounts]
     @Override
     public void managedAccounts(String accountsList) {
-        System.out.println("Account list: " + accountsList);
+        System.out.println("EWrapperImpl managedAccounts Account list: " + accountsList);
     }
-    //! [managedaccounts]
 
     //! [receivefa]
     @Override

@@ -32,8 +32,8 @@ public class Connect {
         String m_reqIp = "127.0.0.1";
         int m_reqPort = 7497;
         int m_reqClientId = 0;
-        Utils.Connect(m_reqIp, m_reqPort, m_reqClientId);
+        String ConnectResult = Utils.Connect(m_reqIp, m_reqPort, m_reqClientId);
         return "<html> " + "<title>" + "Connect" + "</title>"
-                + "<body><h1>" + "Hello Connect" + "</body></h1>" + "</html> ";
+                + "<body><h1>" + ConnectResult + "</body></h1>" + "</html> ";
     }
 }

@@ -29,8 +29,8 @@ public class Disconnect {
     @GET
     @Produces(MediaType.TEXT_HTML)
     public String sayHtmlDisConnect() {
-        Utils.Disconnect();
+        String DisconnectResult = Utils.Disconnect();
         return "<html> " + "<title>" + "Disconnect" + "</title>"
-                + "<body><h1>" + "Hello Disconnect" + "</body></h1>" + "</html> ";
+                + "<body><h1>" + DisconnectResult + "</body></h1>" + "</html> ";
     }
 }

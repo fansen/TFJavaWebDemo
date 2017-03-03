@@ -135,7 +135,7 @@ public class EReader extends Thread {
             m_iBufLen = appendIBuf();
         }
 
-        int msgSize = 0;
+        int msgSize;
 
         while (true)
             try {

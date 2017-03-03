@@ -15,21 +15,31 @@
 
   <p></p>
 
-  <p><a href="http://localhost:8080/api/Connect">Connect</a></p>
+  <p><a href="http://localhost:8080/TFJavaWebDemo/api/Connect">Connect</a></p>
 
-  <p><a href="http://localhost:8080/api/onReqAcctData">onReqAcctData</a></p>
+  <p><a href="http://localhost:8080/TFJavaWebDemo/api/onReqAcctData">onReqAcctData</a></p>
 
-  <p><a href="http://localhost:8080/api/SingleMarketOrder">SingleMarketOrder</a></p>
+  <p><a href="http://localhost:8080/TFJavaWebDemo/api/onReqMktData">onReqMktData</a></p>
 
-  <p><a href="http://localhost:8080/api/SingleLimitOrder">SingleLimitOrder</a></p>
+  <p><a href="http://localhost:8080/TFJavaWebDemo/api/onCancelMktData">onCancelMktData</a></p>
 
-  <p><a href="http://localhost:8080/api/SingleStopOrder">SingleStopOrder</a></p>
+  <p><a href="http://localhost:8080/TFJavaWebDemo/api/onReqMktDepth">onReqMktDepth</a></p>
 
-  <p><a href="http://localhost:8080/api/SingleStopLimitOrder">SingleStopLimitOrder</a></p>
+  <p><a href="http://localhost:8080/TFJavaWebDemo/api/onCancelMktDepth">onCancelMktDepth</a></p>
 
-  <p><a href="http://localhost:8080/api/VWAPGuaranteedOrder">VWAPGuaranteedOrder</a></p>
+  <p><a href="http://localhost:8080/TFJavaWebDemo/api/SingleMarketOrder">SingleMarketOrder</a></p>
 
-  <p><a href="http://localhost:8080/api/Disconnect">Disconnect</a></p>
+
+  <%--<p><a href="http://localhost:8080/TFJavaWebDemo/api/SingleLimitOrder">SingleLimitOrder</a></p>--%>
+
+  <%--<p><a href="http://localhost:8080/TFJavaWebDemo/api/SingleStopOrder">SingleStopOrder</a></p>--%>
+
+  <%--<p><a href="http://localhost:8080/TFJavaWebDemo/api/SingleStopLimitOrder">SingleStopLimitOrder</a></p>--%>
+
+  <%--<p><a href="http://localhost:8080/TFJavaWebDemo/api/VWAPGuaranteedOrder">VWAPGuaranteedOrder</a></p>--%>
+
+
+  <p><a href="http://localhost:8080/TFJavaWebDemo/api/Disconnect">Disconnect</a></p>
 
   </body>
 </html>
